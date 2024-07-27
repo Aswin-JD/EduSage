@@ -1,0 +1,63 @@
+/* Reset some default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a nice background color to the body */
+body {
+    font-family: Arial, sans-serif;
+    background: #6a11cb;
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    color: #333;
+}
+
+/* Container for the main content */
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Content area styling */
+.content {
+    padding: 20px;
+}
+
+/* Video feed styling */
+#video_feed {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar styling */
+.sidebar {
+    font-family: Arial, sans-serif;
+    background: #6a11cb;
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.col-md-4{
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sidebar p {
+    font-size: 18px;
+    text-align: center;
+}
