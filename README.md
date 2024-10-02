@@ -93,3 +93,13 @@ EduSlate is a comprehensive, AI-driven educational platform designed to enhance 
 3. **Mobile App Development** for on-the-go learning.
 4. **LMS Integration** to streamline educational workflows.
 5. **Gamification Features** to boost student engagement.
+
+### Features Architecture 
+## AI Proctoring Test 
+![AI Proctoring](images/AI-Interview.png)
+
+## AI Question Generation
+![Question Generation](images/AI-Interview2.png)
+
+## Evaluation Report 
+![Report Generation](images/evaluatio-Report.png)
