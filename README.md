@@ -1,6 +1,6 @@
-# EduSlate - AI-Powered Learning Platform
+# EduSage - AI-Powered Learning Platform
 
-EduSlate is a comprehensive, AI-driven educational platform designed to enhance independent learning for students. The platform leverages cutting-edge technologies like Whisper for transcription, Gemini for AI-powered question generation, Mediapipe for real-time interactive sessions, and more. EduSlate empowers students to translate and interact with educational content, receive tailored feedback, and engage in virtual classrooms, all while ensuring a seamless, scalable, and secure experience.
+EduSage is a comprehensive, AI-driven educational platform designed to enhance independent learning for students. The platform leverages cutting-edge technologies like Whisper for transcription, Gemini for AI-powered question generation, Mediapipe for real-time interactive sessions, and more. EduSlate empowers students to translate and interact with educational content, receive tailored feedback, and engage in virtual classrooms, all while ensuring a seamless, scalable, and secure experience.
 
 ## Architecture Diagram 
 ![EduSage Architecture](images/Architectural-Diagram.png)
@@ -93,3 +93,13 @@ EduSlate is a comprehensive, AI-driven educational platform designed to enhance 
 3. **Mobile App Development** for on-the-go learning.
 4. **LMS Integration** to streamline educational workflows.
 5. **Gamification Features** to boost student engagement.
+
+### Features Architecture 
+## AI Proctoring Test 
+![AI Proctoring](images/AI-Interview.png)
+
+## AI Question Generation
+![Question Generation](images/AI-Interview2.png)
+
+## Evaluation Report 
+![Report Generation](images/evaluatio-Report.png)
