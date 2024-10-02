@@ -2,7 +2,9 @@
 
 EduSlate is a comprehensive, AI-driven educational platform designed to enhance independent learning for students. The platform leverages cutting-edge technologies like Whisper for transcription, Gemini for AI-powered question generation, Mediapipe for real-time interactive sessions, and more. EduSlate empowers students to translate and interact with educational content, receive tailored feedback, and engage in virtual classrooms, all while ensuring a seamless, scalable, and secure experience.
 
-## Features
+## Architecture Diagram 
+![EduSage Architecture](images/Architectural-Diagram.png)
+### Features
 
 1. **Document Interaction:**
    - Upload documents and ask questions about the content.
@@ -31,7 +33,7 @@ EduSlate is a comprehensive, AI-driven educational platform designed to enhance 
    - Reports generated using Gemini are sent to parents via email.
    - Notifications sent from the website to keep parents informed of their child's progress.
 
-## Technologies Used
+### Technologies Used
 
 1. **Whisper** - For speech-to-text transcription of videos.
 2. **Gemini** - AI-powered question generation and content tailoring.
@@ -46,7 +48,7 @@ EduSlate is a comprehensive, AI-driven educational platform designed to enhance 
 11. **Google Translate** - For Multilingual Support.
 12. **Open CV** - For Image processing.
 
-## Installation
+### Installation
 
 1. **Clone the Repository:**
    ```bash
@@ -76,7 +78,7 @@ EduSlate is a comprehensive, AI-driven educational platform designed to enhance 
 6. **Access the Application:**
    Open your browser and navigate to `http://127.0.0.1:5000/`.
 
-## Usage
+### Usage
 
 - **Upload Documents:** Students can upload documents to receive AI-generated questions and feedback.
 - **Transcribe and Translate Videos:** Students can input YouTube video links, and the platform will transcribe, translate, and sync audio playback.
@@ -84,7 +86,7 @@ EduSlate is a comprehensive, AI-driven educational platform designed to enhance 
 - **AI Proctoring:** The platform monitors students during exams to prevent plagiarism and ensure fair assessments.
 - **View Reports:** Parents can receive detailed progress reports via email and web notifications.
 
-## Future Opportunities
+### Future Opportunities
 
 1. **Expanded Language Support** for transcription and translation.
 2. **AI-Powered Personalization** for tailored learning experiences.
