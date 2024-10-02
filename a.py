@@ -50,7 +50,10 @@ def sendToAI(model, canvas, fingers):
     if fingers == [1, 1, 1, 1, 0]:
         pil_image = Image.fromarray(canvas)
         response = model.generate_content(["Solve this math problem", pil_image])
+<<<<<<< HEAD
         print(response.text)
+=======
+>>>>>>> 5c6e4dae2a9a22339991268a2cdc448a39d56e1c
         return response.text
     return ""
 

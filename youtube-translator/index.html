@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Translator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        #results {
+            margin-top: 20px;
+        }
+        iframe {
+            width: 560px;
+            height: 315px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>YouTube Video Translator</h1>
+    <p>Enter a YouTube video URL to get the translated transcript and audio.</p>
+    <form id="translationForm">
+        <input type="text" id="youtubeUrl" placeholder="Enter YouTube URL" required>
+        <button type="submit">Translate</button>
+    </form>
+    <div id="results">
+        <div id="videoContainer"></div>
+        <div id="transcript"></div>
+        <div id="audio">
+            <p>Translated Audio:</p>
+            <audio id="audioPlayer" controls></audio>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('translationForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            const youtubeUrl = document.getElementById('youtubeUrl').value;
+            const response = await fetch('/process', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ youtube_url: youtubeUrl })
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                const videoId = new URL(youtubeUrl).searchParams.get('v');
+                const videoEmbedUrl = `https://www.youtube.com/embed/${videoId}`;
+                
+                // Display the YouTube video
+                document.getElementById('videoContainer').innerHTML = `<iframe src="${videoEmbedUrl}" frameborder="0" allowfullscreen></iframe>`;
+
+                // Display the transcript
+                document.getElementById('transcript').innerHTML = `<h2>Transcript:</h2><p>${data.transcript}</p>`;
+
+                // Display the audio player
+                const audioPlayer = document.getElementById('audioPlayer');
+                audioPlayer.src = data.audio_url;
+                audioPlayer.style.display = 'block';
+            } else {
+                const error = await response.json();
+                alert(`Error: ${error.error}`);
+            }
+        });
+    </script>
+</body>
+</html>
