@@ -38,11 +38,13 @@ EduSlate is a comprehensive, AI-driven educational platform designed to enhance 
 3. **Mediapipe** - Real-time video analytics and interactive features during virtual lessons.
 4. **TensorFlow** - For AI model development and deployment.
 5. **Flask** - Backend web framework.
-6. **HTML/CSS/JavaScript** - Frontend design and interaction.
-7. **Node.js** - Real-time processing and communication.
-8. **MongoDB** - Database for storing user data and reports.
-9. **Firebase** - Authentication and real-time notifications.
-10. **AWS** - Cloud hosting and scalable infrastructure.
+6. **Node.js** - Real-time processing and communication.
+7. **MongoDB** - Database for storing user data and reports.
+8. **Firebase** - Authentication and real-time notifications.
+9. **AWS** - Cloud hosting and scalable infrastructure.
+10. **React** - Front End.
+11. **Google Translate** - For Multilingual Support.
+12. **Open CV** - For Image processing.
 
 ## Installation
 
