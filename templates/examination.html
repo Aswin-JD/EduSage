@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination Page</title>
+</head>
+<body>
+    <h1>Generated Questions</h1>
+    <form action="/check_answer" method="POST">
+        {% for question in questions %}
+            <div>
+                <p>{{ question }}</p>
+                <input type="text" name="answer" placeholder="Your Answer" required>
+                <input type="hidden" name="question" value="{{ question }}">
+                <button type="submit">Check Answer</button>
+            </div>
+        {% endfor %}
+    </form>
+    {% if responses %}
+        <h2>Responses</h2>
+        <ul>
+        {% for response in responses %}
+            <li>{{ response }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
